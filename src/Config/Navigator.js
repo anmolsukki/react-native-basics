@@ -12,7 +12,7 @@ const AppNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen options={{ headerShown: false }} name="HomePage" component={Homepage} />
-        <Stack.Screen options={{ gestureEnabled: true, title: 'Todo Page' }} name="TodoPage" component={TodoPage} />
+        <Stack.Screen options={{ gestureEnabled: true, title: 'Todo List' }} name="TodoPage" component={TodoPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
