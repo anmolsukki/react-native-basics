@@ -1,30 +1,33 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Button from 'apsl-react-native-button';
 
-class Home extends React.Component {
+class HomePage extends React.Component {
   render() {
     return (
-      <View style={styles.BtnContainer}>
-        <Text style={styles.btnStyle}>Todo List</Text>
+      <View>
+        <Button style={styles.btnStyle} textStyle={styles.textStyles} onPress={() => this.props.navigation.push('TodoPage')}>
+          Todo List
+        </Button>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  BtnContainer: {
-    backgroundColor: 'darkorange',
-    padding: 15,
-    margin: 10,
-    borderRadius: 10,
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
   btnStyle: {
-    color: '#000',
-    fontSize: 18,
-    fontWeight: 'bold',
+    backgroundColor: '#df7861',
+    borderColor: 'transparent',
+    borderRadius: 20,
+    width: '95%',
+    marginTop: 15,
+    alignSelf: 'center',
+    height: 40,
+  },
+  textStyles: {
+    color: '#FFFFFF',
+    fontSize: 20,
   },
 });
 
-export default Home;
+export default HomePage;
