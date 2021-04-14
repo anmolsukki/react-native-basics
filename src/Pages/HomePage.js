@@ -9,6 +9,9 @@ class HomePage extends React.Component {
         <Button style={styles.btnStyle} textStyle={styles.textStyles} onPress={() => this.props.navigation.push('TodoPage')}>
           Todo List
         </Button>
+        <Button style={styles.btnStyle} textStyle={styles.textStyles} onPress={() => this.props.navigation.push('BottomTabNavigator')}>
+          Bottom Tab Navigator
+        </Button>
       </View>
     );
   }

@@ -14,6 +14,7 @@ module.exports = {
     'prettier/prettier': [RULES.ERROR, { endOfLine: 'auto' }],
     'comma-dangle': RULES.OFF,
     'space-before-function-paren': RULES.OFF,
+    'react-native/no-inline-styles': RULES.OFF,
     'no-shadow': RULES.OFF,
     semi: 0,
   },
