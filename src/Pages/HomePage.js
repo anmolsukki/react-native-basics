@@ -12,6 +12,9 @@ class HomePage extends React.Component {
         <Button style={styles.btnStyle} textStyle={styles.textStyles} onPress={() => this.props.navigation.push('BottomTabNavigator')}>
           Bottom Tab Navigator
         </Button>
+        <Button style={styles.btnStyle} textStyle={styles.textStyles} onPress={() => this.props.navigation.push('CustomButton')}>
+          Custom Button
+        </Button>
       </View>
     );
   }
