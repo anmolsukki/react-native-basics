@@ -16,6 +16,8 @@ module.exports = {
     'space-before-function-paren': RULES.OFF,
     'react-native/no-inline-styles': RULES.OFF,
     'no-shadow': RULES.OFF,
+    'react-hooks/exhaustive-deps': RULES.OFF,
+    radix: RULES.OFF,
     semi: 0,
   },
 };
